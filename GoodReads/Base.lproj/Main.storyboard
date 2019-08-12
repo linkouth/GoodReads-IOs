@@ -15,70 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="We Were Eight Years in Power- An American Tragedy" translatesAutoresizingMaskIntoConstraints="NO" id="Wyf-Hm-V4y">
-                                <rect key="frame" x="45" y="114" width="70" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="E35-ip-UdT"/>
-                                    <constraint firstAttribute="height" constant="150" id="uEU-Zk-41V"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Were Eight Years in Power: An American Tragedy " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEz-VW-V7r">
-                                <rect key="frame" x="135" y="114" width="234" height="41"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Ta-Nehisi Coates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-zN-XbZ">
-                                <rect key="frame" x="135" y="160" width="234" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating 4.44/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-aI-NaH">
-                                <rect key="frame" x="135" y="186" width="234" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Added: Jul 24, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpv-9u-5tn">
-                                <rect key="frame" x="135" y="212" width="193" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-NK-uwu">
-                                <rect key="frame" x="135" y="238" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="VQK-H0-fV9"/>
-                                </constraints>
-                                <state key="normal" title="Preview"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-0Z-AZd">
+                                <rect key="frame" x="8" y="54" width="398" height="798"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GL0-aI-NaH" firstAttribute="top" secondItem="Pmv-zN-XbZ" secondAttribute="bottom" constant="5" id="35b-uO-zYH"/>
-                            <constraint firstItem="GL0-aI-NaH" firstAttribute="leading" secondItem="Wyf-Hm-V4y" secondAttribute="trailing" constant="20" id="B2K-zW-PBf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pmv-zN-XbZ" secondAttribute="trailing" constant="45" id="CuU-oO-F0X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pEz-VW-V7r" secondAttribute="trailing" constant="45" id="DhU-ob-PWz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="mYt-NK-uwu" secondAttribute="trailing" constant="129" id="Imd-dK-o8u"/>
-                            <constraint firstItem="Pmv-zN-XbZ" firstAttribute="top" secondItem="pEz-VW-V7r" secondAttribute="bottom" constant="5" id="JvC-Of-p1H"/>
-                            <constraint firstItem="mYt-NK-uwu" firstAttribute="top" secondItem="Hpv-9u-5tn" secondAttribute="bottom" constant="5" id="Ltu-gd-SHx"/>
-                            <constraint firstItem="Wyf-Hm-V4y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="OhV-uX-XnR"/>
-                            <constraint firstItem="Hpv-9u-5tn" firstAttribute="leading" secondItem="Wyf-Hm-V4y" secondAttribute="trailing" constant="20" id="Uc2-CU-fkO"/>
-                            <constraint firstItem="Hpv-9u-5tn" firstAttribute="top" secondItem="GL0-aI-NaH" secondAttribute="bottom" constant="5" id="X37-5H-V7t"/>
-                            <constraint firstItem="mYt-NK-uwu" firstAttribute="leading" secondItem="Wyf-Hm-V4y" secondAttribute="trailing" constant="20" id="az0-2r-dbs"/>
-                            <constraint firstItem="Wyf-Hm-V4y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="fIu-N5-kcP"/>
-                            <constraint firstItem="pEz-VW-V7r" firstAttribute="top" secondItem="Wyf-Hm-V4y" secondAttribute="top" id="fPR-nI-Mrm"/>
-                            <constraint firstItem="Pmv-zN-XbZ" firstAttribute="leading" secondItem="Wyf-Hm-V4y" secondAttribute="trailing" constant="20" id="srI-9c-seZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Hpv-9u-5tn" secondAttribute="trailing" constant="86" id="vM8-Fc-Lzr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GL0-aI-NaH" secondAttribute="trailing" constant="45" id="wDS-oH-bGB"/>
-                            <constraint firstItem="pEz-VW-V7r" firstAttribute="leading" secondItem="Wyf-Hm-V4y" secondAttribute="trailing" constant="20" id="xhx-aa-DuR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBE-0Z-AZd" secondAttribute="trailing" constant="8" id="K2J-cJ-SXN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oBE-0Z-AZd" secondAttribute="bottom" constant="10" id="Moz-Qb-MBq"/>
+                            <constraint firstItem="oBE-0Z-AZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="iRm-sA-2PN"/>
+                            <constraint firstItem="oBE-0Z-AZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vbo-1U-Z1d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mainImageView" destination="Wyf-Hm-V4y" id="mJT-U4-VYW"/>
-                        <outlet property="textLabel" destination="pEz-VW-V7r" id="ITe-iQ-rT7"/>
+                        <outlet property="tableView" destination="oBE-0Z-AZd" id="E7a-Mf-Rxf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,7 +38,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="We Were Eight Years in Power- An American Tragedy" width="296" height="475"/>
-    </resources>
 </document>

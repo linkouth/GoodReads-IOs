@@ -3,19 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6023A322DF46C3006D4608 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6023A222DF46C3006D4608 /* Card.swift */; };
+		CE7EEBED22FAD90200879CB4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EEBEB22FAD90200879CB4 /* TableViewCell.swift */; };
+		CE7EEBEE22FAD90200879CB4 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7EEBEC22FAD90200879CB4 /* TableViewCell.xib */; };
 		CE84ABA322DCABA7006D9D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84ABA222DCABA7006D9D97 /* AppDelegate.swift */; };
 		CE84ABA522DCABA7006D9D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84ABA422DCABA7006D9D97 /* SceneDelegate.swift */; };
 		CE84ABA722DCABA7006D9D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84ABA622DCABA7006D9D97 /* ViewController.swift */; };
 		CE84ABAA22DCABA7006D9D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84ABA822DCABA7006D9D97 /* Main.storyboard */; };
 		CE84ABAC22DCABA8006D9D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84ABAB22DCABA8006D9D97 /* Assets.xcassets */; };
 		CE84ABAF22DCABA8006D9D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84ABAD22DCABA8006D9D97 /* LaunchScreen.storyboard */; };
+		CEB8C70722F85148009C9814 /* ImageUris.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C70622F85148009C9814 /* ImageUris.swift */; };
+		E8C7D726A896D6DB926E84AD /* Pods_GoodReads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A66695FA74DD05CC343470E /* Pods_GoodReads.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A66695FA74DD05CC343470E /* Pods_GoodReads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodReads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90CDFCDA9A21D76768AAEBAF /* Pods-GoodReads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodReads.debug.xcconfig"; path = "Target Support Files/Pods-GoodReads/Pods-GoodReads.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6023A222DF46C3006D4608 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CE7EEBEB22FAD90200879CB4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CE7EEBEC22FAD90200879CB4 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		CE84AB9F22DCABA7006D9D97 /* GoodReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE84ABA222DCABA7006D9D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE84ABA422DCABA7006D9D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		CE84ABAB22DCABA8006D9D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE84ABAE22DCABA8006D9D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE84ABB022DCABA8006D9D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB8C70622F85148009C9814 /* ImageUris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUris.swift; sourceTree = "<group>"; };
+		CF10E23685D41BE31180C913 /* Pods-GoodReads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodReads.release.xcconfig"; path = "Target Support Files/Pods-GoodReads/Pods-GoodReads.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C7D726A896D6DB926E84AD /* Pods_GoodReads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25EEE35D4305F5292C71DB02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A66695FA74DD05CC343470E /* Pods_GoodReads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E13E068807E42A856A532D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CDFCDA9A21D76768AAEBAF /* Pods-GoodReads.debug.xcconfig */,
+				CF10E23685D41BE31180C913 /* Pods-GoodReads.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE6023A122DF4663006D4608 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE6023A222DF46C3006D4608 /* Card.swift */,
+				CEB8C70622F85148009C9814 /* ImageUris.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CE84AB9622DCABA7006D9D97 = {
 			isa = PBXGroup;
 			children = (
 				CE84ABA122DCABA7006D9D97 /* GoodReads */,
 				CE84ABA022DCABA7006D9D97 /* Products */,
+				3E13E068807E42A856A532D3 /* Pods */,
+				25EEE35D4305F5292C71DB02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +97,7 @@
 		CE84ABA122DCABA7006D9D97 /* GoodReads */ = {
 			isa = PBXGroup;
 			children = (
+				CE6023A122DF4663006D4608 /* Models */,
 				CE84ABA222DCABA7006D9D97 /* AppDelegate.swift */,
 				CE84ABA422DCABA7006D9D97 /* SceneDelegate.swift */,
 				CE84ABA622DCABA7006D9D97 /* ViewController.swift */,
@@ -63,6 +105,8 @@
 				CE84ABAB22DCABA8006D9D97 /* Assets.xcassets */,
 				CE84ABAD22DCABA8006D9D97 /* LaunchScreen.storyboard */,
 				CE84ABB022DCABA8006D9D97 /* Info.plist */,
+				CE7EEBEB22FAD90200879CB4 /* TableViewCell.swift */,
+				CE7EEBEC22FAD90200879CB4 /* TableViewCell.xib */,
 			);
 			path = GoodReads;
 			sourceTree = "<group>";
@@ -74,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE84ABB322DCABA8006D9D97 /* Build configuration list for PBXNativeTarget "GoodReads" */;
 			buildPhases = (
+				83950084620AD5FB4A900305 /* [CP] Check Pods Manifest.lock */,
 				CE84AB9B22DCABA7006D9D97 /* Sources */,
 				CE84AB9C22DCABA7006D9D97 /* Frameworks */,
 				CE84AB9D22DCABA7006D9D97 /* Resources */,
+				57FFA340DFAD1F1EAD0327F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +172,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE84ABAF22DCABA8006D9D97 /* LaunchScreen.storyboard in Resources */,
+				CE7EEBEE22FAD90200879CB4 /* TableViewCell.xib in Resources */,
 				CE84ABAC22DCABA8006D9D97 /* Assets.xcassets in Resources */,
 				CE84ABAA22DCABA7006D9D97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57FFA340DFAD1F1EAD0327F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodReads/Pods-GoodReads-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodReads/Pods-GoodReads-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodReads/Pods-GoodReads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83950084620AD5FB4A900305 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodReads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE84AB9B22DCABA7006D9D97 /* Sources */ = {
@@ -141,6 +230,9 @@
 				CE84ABA722DCABA7006D9D97 /* ViewController.swift in Sources */,
 				CE84ABA322DCABA7006D9D97 /* AppDelegate.swift in Sources */,
 				CE84ABA522DCABA7006D9D97 /* SceneDelegate.swift in Sources */,
+				CE7EEBED22FAD90200879CB4 /* TableViewCell.swift in Sources */,
+				CEB8C70722F85148009C9814 /* ImageUris.swift in Sources */,
+				CE6023A322DF46C3006D4608 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +374,7 @@
 		};
 		CE84ABB422DCABA8006D9D97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CDFCDA9A21D76768AAEBAF /* Pods-GoodReads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +387,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-Linkouth.GoodReads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE84ABB522DCABA8006D9D97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF10E23685D41BE31180C913 /* Pods-GoodReads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-Linkouth.GoodReads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
