@@ -59,7 +59,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? TableViewCell {
             let currentCard = cards[indexPath.row]
             cell.nameLabel.text = currentCard.name
-            guard let url = URL(string: currentCard.imageUris!.small!) else { return cell }
+            guard let url = URL(string: currentCard.imageUris!.normal!) else { return cell }
             cell.cardImage.kf.setImage(with: url)
             cell.selectionStyle = .none
             return cell
