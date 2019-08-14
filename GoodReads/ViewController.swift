@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
+            tableView.delegate = self
         }
     }
     
@@ -59,11 +60,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? TableViewCell {
             let currentCard = cards[indexPath.row]
             cell.nameLabel.text = currentCard.name
+            cell.manaCostLabel.text = currentCard.manaCost
+            cell.descriptionLabel.text = currentCard.oracle
             guard let url = URL(string: currentCard.imageUris!.normal!) else { return cell }
             cell.cardImage.kf.setImage(with: url)
             cell.selectionStyle = .none
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController()
+        detailVC.card = cards[indexPath.row]
+        let navigationController = UINavigationController(rootViewController: detailVC)
+        self.present(navigationController, animated: true)
+//        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }

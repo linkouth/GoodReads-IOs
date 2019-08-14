@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE5F4CD22302FA6400708466 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F4CD02302FA6400708466 /* DetailViewController.swift */; };
+		CE5F4CD32302FA6400708466 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5F4CD12302FA6400708466 /* DetailViewController.xib */; };
 		CE6023A322DF46C3006D4608 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6023A222DF46C3006D4608 /* Card.swift */; };
 		CE7EEBED22FAD90200879CB4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EEBEB22FAD90200879CB4 /* TableViewCell.swift */; };
 		CE7EEBEE22FAD90200879CB4 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7EEBEC22FAD90200879CB4 /* TableViewCell.xib */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		7A66695FA74DD05CC343470E /* Pods_GoodReads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodReads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CDFCDA9A21D76768AAEBAF /* Pods-GoodReads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodReads.debug.xcconfig"; path = "Target Support Files/Pods-GoodReads/Pods-GoodReads.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5F4CD02302FA6400708466 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE5F4CD12302FA6400708466 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CE6023A222DF46C3006D4608 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		CE7EEBEB22FAD90200879CB4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CE7EEBEC22FAD90200879CB4 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				CE84ABA422DCABA7006D9D97 /* SceneDelegate.swift */,
 				CE84ABA622DCABA7006D9D97 /* ViewController.swift */,
 				CE84ABA822DCABA7006D9D97 /* Main.storyboard */,
+				CE5F4CD02302FA6400708466 /* DetailViewController.swift */,
+				CE5F4CD12302FA6400708466 /* DetailViewController.xib */,
 				CE84ABAB22DCABA8006D9D97 /* Assets.xcassets */,
 				CE84ABAD22DCABA8006D9D97 /* LaunchScreen.storyboard */,
 				CE84ABB022DCABA8006D9D97 /* Info.plist */,
@@ -173,6 +179,7 @@
 			files = (
 				CE84ABAF22DCABA8006D9D97 /* LaunchScreen.storyboard in Resources */,
 				CE7EEBEE22FAD90200879CB4 /* TableViewCell.xib in Resources */,
+				CE5F4CD32302FA6400708466 /* DetailViewController.xib in Resources */,
 				CE84ABAC22DCABA8006D9D97 /* Assets.xcassets in Resources */,
 				CE84ABAA22DCABA7006D9D97 /* Main.storyboard in Resources */,
 			);
@@ -233,6 +240,7 @@
 				CE7EEBED22FAD90200879CB4 /* TableViewCell.swift in Sources */,
 				CEB8C70722F85148009C9814 /* ImageUris.swift in Sources */,
 				CE6023A322DF46C3006D4608 /* Card.swift in Sources */,
+				CE5F4CD22302FA6400708466 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
